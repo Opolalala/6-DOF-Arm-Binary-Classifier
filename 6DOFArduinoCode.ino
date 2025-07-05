@@ -53,13 +53,8 @@ void setup() {
   Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(50); // Standard for servos
-
   delay(1000);
-
-  Serial.println("Moving...");
-  
-  
-    
+  Serial.println("Moving...");   
 }
 
 void loop() {
@@ -88,5 +83,6 @@ void loop() {
       movebase(90);      
     }
   }
+  
   delay(100);
 }
